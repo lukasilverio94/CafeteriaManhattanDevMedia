@@ -170,11 +170,11 @@ nav {
   border-radius: 5px;
 }
 /* Horario funcionamento container */
-.container-parallax5 {
+.parallax5 {
   height: 80vh;
   background-image: url("assets/cafeteria.jpg");
 }
-.container-parallax5 h2 {
+.parallax5 h2 {
   position: absolute;
   margin-top: 1rem;
   top: 10%;
@@ -278,4 +278,88 @@ footer a {
 }
 .btn-home:hover {
   transform: scale(1.2);
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 1024px) {
+  .parallax1,
+  .parallax2,
+  .parallax3 {
+    background-size: cover;
+  }
+  .title {
+    font-size: 3rem;
+  }
+
+  iframe {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .title {
+    padding: 25px;
+  }
+
+  .parallax1 {
+    max-height: 600px;
+    background-size: cover;
+  }
+  .time-list {
+    padding: 15px;
+    max-width: 450px;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .parallax1 {
+    max-height: 400px;
+    background-size: cover;
+  }
+
+  .text-content {
+    line-height: 30px;
+    min-width: 80%;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .title-content {
+    margin: 15px auto;
+  }
+
+  .time-list {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 10%;
+  }
+
+  #time h2 {
+    border-bottom: 40px;
+  }
+  .parallax5 h2 {
+    display: absolute;
+    top: 0;
+  }
+
+  .btn-home {
+    right: 15px;
+  }
+}
+
+@media only screen and (max-width: 470) {
+  .contact-title {
+    width: 50%;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+  #time {
+    font-size: 12px;
+  }
 }
